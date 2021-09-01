@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de productos</h1>
+    <main>
+        <form>
+            
+            <label>* Nombre del producto: </label>
+            <input type="text" size="50" name="txtNombreProducto" required></input>
+            <br /><br/>
+            <label>Imagen del producto: </label>
+            <input type="file" name="txtImagen"></input>
+            <br /><br>
+            <label>Categoria: </label><br><br>
+            <input type="radio" name="rbtHombre">Hombre</input>
+            <input type="radio" name="rbtMujer">Mujer</input>
+            <input type="radio" name="rbtNiño">Niño</input>
+            <br><br>
+            <label>Precio de Venta: </label>
+            <input type="number" name="cbxPrecioVenta"></input>
+            <br /><br>
+            <label>Precio de Compra: </label>
+            <input type="number" name="cbxPrecioCompra"></input>
+            <br /><br>
+            <label>Existencias: </label>
+            <input type="number" name="cbxExistencias"></input>
+            <br /><br>
+            <label>Descripción: </label><br>
+            <textarea name="textarea" id="" cols="40" rows="4" placeholder="Escriba algo"></textarea>
+            <br/><br>
+            <input type="submit" value="Guardar">
+            <input type="submit" value="Borrar">
+
+</body>
+</html>
