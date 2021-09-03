@@ -1,0 +1,47 @@
+.nav {
+    background-color: yellow;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.flex-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #FFFFFF;
+}
+
+.flex-container>div {
+    background-color: #FFFFFF;
+    width: 35%;
+    margin: 10px;
+    text-align: justify;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
