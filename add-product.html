@@ -28,10 +28,10 @@
         <form>
             
             <label>* Nombre del producto: </label>
-            <input type="text" size="50" name="txtNombreProducto" required></input>
+            <input type="text" size="50" name="txtNombreProducto" id = "txtNombreProducto" required></input>
             <br /><br/>
             <label>Imagen del producto: </label>
-            <input type="file" name="txtImagen"></input>
+            <input type="file" name="txtImagen" id = "txtImagen"></input>
             <br /><br>
             <label>Categoria: </label>
             <select name="Categoria">
@@ -41,19 +41,19 @@
             </select>
             <br><br>
             <label>Precio de Venta: </label>
-            <input type="number" name="cbxPrecioVenta"></input>
+            <input type="number" name="cbxPrecioVenta" id = "cbxPrecioVenta"></input>
             <br /><br>
-            <label>Precio de Compra: </label>
-            <input type="number" name="cbxPrecioCompra"></input>
-            <br /><br>
+            <!-- <label>Precio de Compra: </label>
+            <input type="number" name="cbxPrecioCompra" id = "cbxPrecioCompra"></input>
+            <br /><br> -->
             <label>Existencias: </label>
-            <input type="number" name="cbxExistencias"></input>
+            <input type="number" name="cbxExistencias" id = "cbxExistencias"></input>
             <br /><br>
             <label>Descripción: </label><br>
             <textarea name="textarea" id="" cols="40" rows="4" placeholder="Escriba algo"></textarea>
             <br/><br>
-            <input type="submit" value="Guardar">
-            <input type="submit" value="Borrar">
+            <input type="submit" id = "submit" value="Guardar">
+            <!-- <input type="submit" value="Borrar"> -->
 
 </body>
 </html>
