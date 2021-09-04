@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            color:gold;
+            font-family: Arial, Helvetica, sans-serif;
+            background-position: center;
+            background-color: black;
+            font-size: 300%;
+            
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,27 +27,27 @@
         <form>
             <center><label>Introduce tu nombre</label></center>
             <br />
-            <center><input type="text" name="txNombre"></input></center>
+            <center><input type="text" name="txNombre" id="txname" required></input></center>
             <br />
             <center><label>Ingresa tu apellido</label></center>
             <br />
-            <center><input type="text" name="txApellido"></input> </center>
-
+            <center><input type="text" name="txApellido" id="txlastna"></input> </center>
             <br />
             <center><label>Ingresa tu email</label></center>
             <br />
-            <center><input type="email" name="txCorreo"></input></center>
+            <center><input type="email" name="txCorreo" id="mail" required></input></center>
             <br />
             <center><label>Ingresa tu asunto</label></center>
             <br />
-            <center><input type="text" name="txasunto"></input></center>
+            <center><input type="text" name="txasunto" id="subject" required></input></center>
             <br />
             <center><label>Ingresa tu mensaje aqui</label></center>
             <br/>
-            <center><input type="text" name="txmensaje"></input></center>
+            <center><textarea name="descripcion" cols="50" rows="12">Ingrese mas informacion </textarea></center>
             <br/>
             <center><input type="submit" value="Enviar"></center>
-
+            <br />
+            <br />
             <left><p>Direccion Cll 127 # 7- 90 Usaquen</p></left>
             <left><p>TEL 3218405777</p></left>
 
