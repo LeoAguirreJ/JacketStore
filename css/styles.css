@@ -1,5 +1,49 @@
+header{
+    background-color: black;
+    height: 200px;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+    background-color: black;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 40px;
+    background-color: #ff9900;
+}
+
+footer {
+    background-color: black;
+    color: blanchedalmond;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+h1 {
+    color: darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 300%;
+    background-color: black;
+}
+
+h2 {
+    color: #edecd7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+
+}
+
+a{
+    color: #edecd7;
+}
+
 .nav {
-    background-color: yellow;
     list-style-type: none;
     text-align: center;
     margin: 0;
@@ -17,31 +61,13 @@
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    background-color: #FFFFFF;
+    background-color: #ff9900;
+    margin: 2%;
 }
 
 .flex-container>div {
-    background-color: #FFFFFF;
+    background-color: #ff9900;
     width: 35%;
     margin: 10px;
     text-align: justify;
-}
-
-html {
-    min-height: 100%;
-    position: relative;
-}
-
-body {
-    margin: 0;
-    margin-bottom: 40px;
-}
-
-footer {
-    background-color: yellow;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    color: white;
 }

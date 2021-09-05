@@ -6,35 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            color: darkorange;
+            background-image: url("imagenes/background.jpg");
+        }
+
+        .outer {
+            display: table;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .middle {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .inner {
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            /* Whatever width you want */
+        }
+        a{
+            color: darkorange;
+        }
+    </style>
 </head>
 
 <body>
-    <div>
+    <div class="outer">
+        <div class="middle">
         <center>
             <h1>Iniciar sesión</h1>
-            <form>
-                <div>
-                    <label>Email</label>
-                    <br>
-                    <input type="email" id="email" name="email" multiple required>
-                </div>
+            <div>
+                <label>Email</label>
                 <br>
-                <div>
-                    <label>Contraseña</label><br>
-                    <input type="password" id="email" name="email" multiple>
-                </div>
-                <br>
-                <button type="submit" onclick="myFunction()">Iniciar</button>
-                <p>Si no tienes una cuenta, <br> registrarte dando <a href="index.html">click</a></p>
-                <p id="datos"></p>
-            </form>
+                <input type="email" id="email" name="email" multiple required>
+            </div>
+            <br>
+            <div>
+                <label>Contraseña</label><br>
+                <input type="password" id="email" name="email" multiple>
+            </div>
+            <br>
+            <button type="submit" onclick="myFunction()">Iniciar</button>
+            <p>Si no tienes una cuenta, <br> registrarte dando <a href="index.html">click</a></p>
+            <p id="datos"></p>
         </center>
+    </div>
     </div>
 </body>
 <script>
     function myFunction() {
-      var x = document.getElementById("email").value;
-      document.getElementById("datos").innerHTML = x;
+        var x = document.getElementById("email").value;
+        document.getElementById("datos").innerHTML = x;
     }
-    </script>
+</script>
+
 </html>
