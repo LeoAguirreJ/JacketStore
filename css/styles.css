@@ -1,28 +1,22 @@
-header{
-    background-color: black;
-    height: 200px;
-}
-
 html {
     min-height: 100%;
     position: relative;
-    background-color: black;
+    background-color: #e78b00;
 }
 
 body {
     margin: 0;
     margin-bottom: 40px;
-    background-color: #ff9900;
+    background-color: #e78b00;
 }
 
 footer {
     background-color: black;
-    color: blanchedalmond;
+    color: #edecd7;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 40px;
-    color: white;
 }
 
 h1 {
@@ -61,13 +55,24 @@ a{
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    background-color: #ff9900;
+    background-color: #e78b00;
     margin: 2%;
 }
 
 .flex-container>div {
-    background-color: #ff9900;
+    background-color: #e78b00;
     width: 35%;
     margin: 10px;
     text-align: justify;
+}
+header {
+    z-index: 32;
+    display: flex;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+    background-color: black;
+    align-items: center;
+    flex-wrap: nowrap;
 }
