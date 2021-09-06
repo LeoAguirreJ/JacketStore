@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacket Store</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        #carrito {
+            border-collapse: collapse;
+            width: 100%;
+            border-radius: 10%;
+            ;
+        }
+
+        #carrito td,
+        #carrito th {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #carrito th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        #carrito button {
+            background-color: black;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 10%;
+
+        }
+
+        #total {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 40%;
+            margin: auto;
+            border-radius: 10%;
+            border: 1px solid white;
+        }
+
+        #total th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+
+        }
+
+        p {
+            height: 10px;
+        }
+
+        #pagar {
+            background-color: black;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 22px;
+            width: 80%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>
+                Jacket Store
+            </h1>
+            <center>
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="hombres.html">Hombres</a></li>
+                    <li><a href="mujeres.html">Mujeres</a></li>
+                    <li><a href="niños.html">Niños</a></li>
+                </ul>
+            </center>
+        </header>
+
+        <h2><img src="imagenes/carrito.png" width="50" height="50" />Carrito de Compras</h2>
+        <p></p>
+        <form>
+            <table id="carrito">
+                <tr>
+                    <th>#</th>
+                    <th>Articulo</th>
+                    <th>Codigo</th>
+                    <th>Descripción</th>
+                    <th>Valor</th>
+                    <th>Retirar</th>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><img src="imagenes/item1.jpg" width="50" height="50" /></td>
+                    <td>CodigoItem1</td>
+                    <td>
+                        <figcaption>Descripción item</figcaption>
+                    </td>
+                    <td>200.000 COP</td>
+                    <td><button onClick="alert('¡Retirado!')">Retirar</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="imagenes/item2.jpg" width="50" height="50" /></td>
+                    <td>CodigoItem1</td>
+                    <td>
+                        <figcaption>Descripción item</figcaption>
+                    </td>
+                    <td>220.000 COP</td>
+                    <td><button onClick="alert('¡Retirado!')">Retirar</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="imagenes/item3.jpg" width="50" height="50" /></td>
+                    <td>CodigoItem1</td>
+                    <td>
+                        <figcaption>Descripción item</figcaption>
+                    </td>
+                    <td>120.000 COP</td>
+                    <td><button onClick="alert('¡Retirado!')">Retirar</button></td>
+                </tr>
+            </table>
+            <p></p>
+            <table id="total">
+                <tr>
+                    <th>Total</th>
+                    <th>540.000 COP</th>
+                </tr>
+            </table>
+            <p></p>
+            <center>
+                <input type="radio" id="tarjeta" name="formapago" value="tarjeta">
+                <label for="tarjeta">Con Tarjeta de Debito</label><br>
+                <input type="radio" id="tarjeta" name="formapago" value="tarjeta">
+                <label for="tarjeta">Con Tarjeta de Credito</label><br>
+                <input type="radio" id="pse" name="formapago" value="pse">
+                <label for="pse">Con PSE</label><br>
+                <p></p>
+                <button id="pagar" onClick="alert('A pagar!')">P a g a r</button>
+                <p></p>
+            </center>
+        </form>
+    </main>
+    <footer>
+        <link rel="icon" type="image/png" href="favicon/facebook.png" sizes="64x64">
+        <a href="https://www.facebook.com/">
+            <img src="favicon/facebook3.png" width="32" height="32">
+        </a>
+    </footer>
+</body>
+
+</html>

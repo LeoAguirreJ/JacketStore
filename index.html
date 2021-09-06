@@ -5,22 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
+    <title>Jacket Store</title>
+
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
-<header>
-    <h1><center>Jacket Store</h1>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="hombres.html">Hombres</a>
-        <a href="mujeres.html">Mujeres</a>
-        <a href="niños.html">Niños</a>
-    </nav>
-</header>
+
 
 <body>
     <main>
-        <div>
+        <header>
+            <h1>
+                Jacket Store
+            </h1>
+            <center>
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="hombres.html">Hombres</a></li>
+                    <li><a href="mujeres.html">Mujeres</a></li>
+                    <li><a href="niños.html">Niños</a></li>
+                </ul>
+            </center>
+        </header>
+        <div class="flex-container">
             <a href="hombres.html">
                 <img src="imagenes/hombres.jpg" width="400" height="300">
             </a>
@@ -31,8 +38,10 @@
                 <img src="imagenes/niños.jpg" width="400" height="300">
             </a>
         </div>
-        <div>
-            <h1><center>MAS VENDIDOS</center></h1>
+        <h2>
+            <center>MAS VENDIDOS</center>
+        </h2>
+        <div class="flex-container">
             <a href="hombres.html">
                 <img src="imagenes/Jacket1.jpg" width="400" height="300">
             </a>
@@ -45,7 +54,10 @@
         </div>
     </main>
     <footer>
-        <a href="https://www.facebook.com/">facebook</a>
+        <link rel="icon" type="image/png" href="favicon/facebook.png" sizes="64x64">
+        <a href="https://www.facebook.com/">
+            <img src="favicon/facebook3.png" width="32" height="32">
+        </a>
     </footer>
 </body>
 

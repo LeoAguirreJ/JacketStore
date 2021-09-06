@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Formulario de productos</h1>
+    <main>
+        <form>
+            
+            <label>* Nombre del producto: </label>
+            <input type="text" size="50" name="txtNombreProducto" id = "txtNombreProducto" required></input>
+            <br /><br/>
+            <label>Imagen del producto: </label>
+            <input type="file" name="txtImagen" id = "txtImagen"></input>
+            <br /><br>
+            <label>Categoria: </label>
+            <select name="Categoria">
+                  <option>Hombre</option>
+                  <option>Mujer</option>
+                  <option>Niños</option>
+            </select>
+            <br><br>
+            <label>Precio de Venta: </label>
+            <input type="number" name="cbxPrecioVenta" id = "cbxPrecioVenta"></input>
+            <br /><br>
+            <!-- <label>Precio de Compra: </label>
+            <input type="number" name="cbxPrecioCompra" id = "cbxPrecioCompra"></input>
+            <br /><br> -->
+            <label>Existencias: </label>
+            <input type="number" name="cbxExistencias" id = "cbxExistencias"></input>
+            <br /><br>
+            <label>Descripción: </label><br>
+            <textarea name="textarea" id="" cols="40" rows="4" placeholder="Escriba algo"></textarea>
+            <br/><br>
+            <input type="submit" id = "submit" value="Guardar">
+            <!-- <input type="submit" value="Borrar"> -->
+
+</body>
+</html>

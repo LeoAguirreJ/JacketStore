@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de ventas</title>
+    <!--Archivos jQuery, Moment.js y Date Range Picker requeridos para rango de fechas -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <h1>Informe de ventas</h1>
+    <h2>Rango de ventas</h2>
+        <!--Codigo copiado de https://www.daterangepicker.com/#example2  (para el rango de fecha)-->
+        <!-- Desde linea 35 hasta 66  -->
+            <div id="reportrange" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 25%">
+            <i class="fa fa-calendar"></i>&nbsp;
+            <span></span> <i class="fa fa-caret-down"></i>
+        </div>
+    
+            <script type="text/javascript">
+            $(function() {
+            
+                var start = moment().subtract(29, 'days');
+                var end = moment();
+            
+                function cb(start, end) {
+                    $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                }
+            
+                $('#reportrange').daterangepicker({
+                    startDate: start,
+                    endDate: end,
+                    ranges: {
+                    'Hoy': [moment(), moment()],
+                    'Ayer': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Ultimos 7 Días': [moment().subtract(6, 'days'), moment()],
+                    'Ultimos 30 Días': [moment().subtract(29, 'days'), moment()],
+                    'Este Mes': [moment().startOf('month'), moment().endOf('month')],
+                    'Ultimo Mes': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    }
+                }, cb);
+            
+                cb(start, end);
+            
+            });
+            </script>
+                    <br><br>
+    <table border width="90%" > 
+                <tr bgcolor="darkorange">
+                    <th>ID Cliente</th>
+                    <th>Tipo</th>
+                    <th>Producto</th>
+                    <th>Fecha y hora de pago</th>
+                    <th>Comentario</th>
+                    <th>Tipo de pago</th>
+                    
+                </tr>
+                <tr>
+                    <td >Id</td>
+                    <td>Categotia</td>
+                    <td>IdProducto</td>
+                    <td>Fecha</td>
+                    <td>Comentario</td>
+                    <td>Tipo</td>
+                </tr>
+
+
+            </table>
+
+</body>
+</html>
