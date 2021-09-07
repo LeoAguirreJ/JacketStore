@@ -41,12 +41,19 @@ a{
     text-align: center;
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 
 .nav li {
     display: inline-block;
+    text-decoration: none;
     font-size: 20px;
     padding: 20px;
+    justify-content: center;
+}
+.nav li a{
+
+    text-decoration: none;
 }
 
 .flex-container {
@@ -85,6 +92,7 @@ header {
 }
 .divNav{
     width: 30%;
+    justify-content: center;
 }
 .divNav2{
     width: 69%;
