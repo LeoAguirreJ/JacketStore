@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1{
-            color:gold;
-            font-family: Arial, Helvetica, sans-serif;
-            background-position: center;
-            background-color: black;
-            font-size: 300%;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 <body>
     <header>
-        <h1><center>Jacket Store</h1>
+        <h1>
+            <center>Jacket Store
+        </h1>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="hombres.html">Hombres</a>
@@ -28,7 +24,9 @@
     </header>
     <br />
     <main>
-        <center><h1>Contacto</h1></center>
+        <center>
+            <h1 class="cont"> Contacto</h1>
+        </center>
         <form>
             <center><label>Introduce tu nombre</label></center>
             <br />
@@ -47,24 +45,35 @@
             <center><input type="text" name="txsubject" id="txsubject" required></input></center>
             <br />
             <center><label>Ingresa tu mensaje aqui</label></center>
-            <br/>
+            <br />
             <center><textarea name="descripcion" cols="50" rows="12">Ingrese mas informacion </textarea></center>
-            <br/>
+            <br />
             <center><input type="submit" value="Enviar"></center>
             <br />
             <br />
-            <left><p>Direccion Cll 127 # 7- 90 Usaquen</p></left>
-            <left><p>TEL 3218405777</p></left>
+
+            <div class="phoadres">
+                <div class="adress">
+                    <p>Direccion Cll 127 # 7- 90 Usaquen</p>
+                </div>
+                <div class="phone">
+                    <p>TEL 3218405777</p>
+                </div>
+            </div>
+
+
+
 
 
 
         </form>
-    
+
     </main>
     <br />
     <br />
     <footer>
-    
+
     </footer>
 </body>
+
 </html>
