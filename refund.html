@@ -20,42 +20,33 @@
     </center>
     </header>
 <body>
-    <form>
-        <center>
+    <form class = "devoluciones_formulario">
+        <h1 class= "devoluciones_h1"> FORMULARIO DE DEVOLUCIÓN</h1>
         <br>
-        <label>Nombre</label>
-        <br>
-        <br>
-        <input type="text" name = txtNombre  required> </input>
+        <label name="txtNombre" class = "devoluciones_label">Nombre:</label>
+        <input type="text" class= "devoluciones_input" id = "txtNombre"  placeholder = "Nombre del comprador" required> </input>
         <br>
         <br>
-        <label> Teléfono </label>
+        <label class = "devoluciones_label"> Teléfono: </label>
+        <input type="tel" class= "devoluciones_input" name = nTelefono  placeholder = "+5711111111" min = 999999 max = 99999999> </input>
         <br>
         <br>
-        <input type="tel" name = nTelefono  min = 999999 max = 99999999> </input>
+        <label class = "devoluciones_label"> Correo electrónico: </label>
+        <input type="email" class= "devoluciones_input" placeholder=" ejemplo@mail.com" required ></input>
         <br>
         <br>
-        <label> Correo electrónico </label>
+        <label class = "devoluciones_label">Fecha de compra: </label>
+        <input type = "date" class= "devoluciones_input" required></input>
         <br>
         <br>
-        <input type="email" required></input>
+        <label> Motivo de la devolución </label>
         <br>
         <br>
-        <label>Fecha en que realizó la compra </label>
-        <br>
-        <br>
-        <input type = "date" required></input>
-        <br>
-        <br>
-        <label> Motivo de la devolución</label>
-        </br>
-        <br>
-        <textarea name = "textarea" id ="" cols = "40" rows = 3 required ></textarea>
+        <textarea class = "devoluciones_textarea" name = "textarea" id ="" cols = "40" rows = 6 placeholder = "Comentarios"required ></textarea>
         <br>
         <br>
 
-    <input type="submit" value="Enviar"> </input>
-    </center>
+    <input class = "devoluciones_boton" type = "submit" value= "Enviar" > </input>
 
     </form>
 
