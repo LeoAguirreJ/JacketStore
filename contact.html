@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 
 <body>
@@ -26,32 +26,33 @@
     <main>
         <center>
             <h1 class="cont"> Contacto</h1>
-        </center>
-        <form>
-            <center><label>Introduce tu nombre</label></center>
+        
+        <form class="form" >
+            <label>Introduce tu nombre</label>
             <br />
-            <center><input type="text" name="txname" id="txname" required></input></center>
+           <input type="text" name="txname" id="txname" required></input>
             <br />
-            <center><label>Ingresa tu apellido</label></center>
+            <label>Ingresa tu apellido</label>
             <br />
-            <center><input type="text" name="txlastna" id="txlastna"></input> </center>
+            <input type="text" name="txlastna" id="txlastna"></input> 
             <br />
-            <center><label>Ingresa tu email</label></center>
+            <label>Ingresa tu email</label>
             <br />
-            <center><input type="email" name="txmail" id="txmail" required></input></center>
+            <input type="email" name="txmail" id="txmail" required></input>
             <br />
-            <center><label>Ingresa tu asunto</label></center>
+            <label>Ingresa tu asunto</label>
             <br />
-            <center><input type="text" name="txsubject" id="txsubject" required></input></center>
+            <input type="text" name="txsubject" id="txsubject" required></input>
             <br />
-            <center><label>Ingresa tu mensaje aqui</label></center>
+            <label>Ingresa tu mensaje aqui</label>
             <br />
-            <center><textarea name="descripcion" cols="50" rows="12">Ingrese mas informacion </textarea></center>
+            <textarea name="descripcion" cols="50" rows="12">Ingrese mas informacion </textarea>
             <br />
-            <center><input type="submit" value="Enviar"></center>
+            <input class="btnform btn btn-danger" type="submit" value="Enviar">
+            
+        </form>
+    </center>
             <br />
-            <br />
-
             <div class="phoadres">
                 <div class="adress">
                     <p>Direccion Cll 127 # 7- 90 Usaquen</p>
@@ -66,7 +67,7 @@
 
 
 
-        </form>
+       
 
     </main>
     <br />
