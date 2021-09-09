@@ -7,7 +7,6 @@ html {
 body {
     margin: 0;
     margin-bottom: 40px;
-    background-color: #e78b00;
 }
 
 footer {
@@ -42,12 +41,19 @@ a{
     text-align: center;
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 
 .nav li {
     display: inline-block;
+    text-decoration: none;
     font-size: 20px;
     padding: 20px;
+    justify-content: center;
+}
+.nav li a{
+
+    text-decoration: none;
 }
 
 .flex-container {
@@ -55,12 +61,10 @@ a{
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    background-color: #e78b00;
     margin: 2%;
 }
 
 .flex-container>div {
-    background-color: #e78b00;
     width: 35%;
     margin: 10px;
     text-align: justify;
@@ -112,7 +116,99 @@ header {
     background-color: aliceblue;
 }
 .devoluciones_textarea{
-
     width: 100%;
+}
+
+
+
+.customicon{
+    font-size: 20px;
+    text-align:center;
+}
+.myButtonOrange{
+    background-color: #e78b00;
+    width: 150px;
+    height: 50px;
+    color: #edecd7;
+}
+.divNav{
+    width: 30%;
+    justify-content: center;
+}
+.divNav2{
+    width: 69%;
+}
+.phoadres{
+    display: flex;
+}
+.adress{
+    color: #edecd7;
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+    text-align: center;
+}
+.phone{
+    color: #edecd7;
+    width: 70%;
+    height: 40px;
+    background-color: black;
+    text-align: right;
+}
+.cont{
+    background-color: black;
+    color: beige;
+    size: 200%;
+}
+/*.boxdesign{
+    
+    display:;
+     margin: 10px 10px 10px 10px;  */
+  /* padding: 1% 0 0 1%; */
+   
+    /* margin: 10px 10px 10px 10px; 
+    
+}*/
+.box1about {
+    width: 30%;
+  height: 30%;
+    border-style: solid;
+    border-color: grey;
+    color: beige;
+    background-color:black;
+    margin: 10%, 6%, 6%, 30%;
+}
+
+.box2about {
+    width: 30%;
+  height: 30%;
+    border-style: solid;
+    border-color:beige;
+    color: beige;
+    background-color: gray;
+    margin: 10%, 6%, 6%, 30%;
+}
+
+.box3about {
+    width: 30%;
+  height: 30%;
+    border-style: solid;
+    border-color: grey;
+    color: beige;
+    background-color: black;
+    margin: 10%, 6%, 6%, 30%;
+}
+.habout{
+    color: gold;
+    size: 200%;
 
 }
+.form{
+    width: 40%;
+    padding: 20px;
+    margin: o auto;
+    background-color: beige;
+}
+/*.btnform{
+    
+}*/
