@@ -32,8 +32,17 @@
             width: 400px;
             /* Whatever width you want */
         }
-        a{
+
+        a {
             color: darkorange;
+        }
+
+        .myButtonOrange {
+            background-color: #e78b00;
+            width: 120px;
+            height: 35px;
+            color: black;
+            border: 0px;
         }
     </style>
 </head>
@@ -41,24 +50,24 @@
 <body>
     <div class="outer">
         <div class="middle">
-        <center>
-            <h1>Iniciar sesión</h1>
-            <div>
-                <label>Email</label>
+            <center>
+                <h1>Iniciar sesión</h1>
+                <div>
+                    <label>Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" multiple required>
+                </div>
                 <br>
-                <input type="email" id="email" name="email" multiple required>
-            </div>
-            <br>
-            <div>
-                <label>Contraseña</label><br>
-                <input type="password" id="email" name="email" multiple>
-            </div>
-            <br>
-            <button type="submit" onclick="myFunction()">Iniciar</button>
-            <p>Si no tienes una cuenta, <br> registrarte dando <a href="index.html">click</a></p>
-            <p id="datos"></p>
-        </center>
-    </div>
+                <div>
+                    <label>Contraseña</label><br>
+                    <input type="password" id="email" name="email" multiple>
+                </div>
+                <br>
+                <button class="myButtonOrange" type="submit" onclick="myFunction()">Iniciar</button>
+                <p>Si no tienes una cuenta, <br> registrarte dando <a href="registration.html">click</a></p>
+                <p id="datos"></p>
+            </center>
+        </div>
     </div>
 </body>
 <script>
