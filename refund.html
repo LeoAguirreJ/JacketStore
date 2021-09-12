@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Devoluciones</title>
 </head>
 <header> 
@@ -20,52 +21,47 @@
     </center>
     </header>
 <body>
-    <form>
-        <center>
+    <form class = "devoluciones_formulario">
+        <h1 class= "devoluciones_h1"> FORMULARIO DE DEVOLUCIÓN</h1>
         <br>
-        <label>Nombre</label>
-        <br>
-        <br>
-        <input type="text" name = txtNombre  required> </input>
+        <label name="txtNombre" class = "devoluciones_label">Nombre:</label>
+        <input type="text" class= "devoluciones_input" id = "txtNombre"  placeholder = "Nombre del comprador" required> </input>
         <br>
         <br>
-        <label> Teléfono </label>
+        <label class = "devoluciones_label"> Teléfono: </label>
+        <input type="tel" class= "devoluciones_input" name = nTelefono  placeholder = "+5711111111" min = 999999 max = 99999999> </input>
         <br>
         <br>
-        <input type="tel" name = nTelefono  min = 999999 max = 99999999> </input>
+        <label class = "devoluciones_label"> Correo electrónico: </label>
+        <input type="email" class= "devoluciones_input" placeholder=" ejemplo@mail.com" required ></input>
         <br>
         <br>
-        <label> Correo electrónico </label>
+        <label class = "devoluciones_label">Fecha de compra: </label>
+        <input type = "date" class= "devoluciones_input" required></input>
         <br>
         <br>
-        <input type="email" required></input>
+        <label> Motivo de la devolución </label>
         <br>
         <br>
-        <label>Fecha en que realizó la compra </label>
-        <br>
-        <br>
-        <input type = "date" required></input>
-        <br>
-        <br>
-        <label> Motivo de la devolución</label>
-        </br>
-        <br>
-        <textarea name = "textarea" id ="" cols = "40" rows = 3 required ></textarea>
+        <textarea class = "devoluciones_textarea" name = "textarea" id ="" cols = "40" rows = 6 placeholder = "Comentarios"required ></textarea>
         <br>
         <br>
 
-    <input type="submit" value="Enviar"> </input>
-    </center>
-
+   <!--<input  type = "submit" value= "Enviar" > </input>-->
+   <center>
+    <button type="button" class="btn btn-secondary">Enviar</button>
+   </center>
     </form>
-
-<h5>Recuerde que únicamente se pueden efectuar devoluciones si el artículo se encuentra en perfectas condiciones y no 
+<div>
+<h5 class = "devoluciones_h5">Recuerde que únicamente se pueden efectuar devoluciones si el artículo se encuentra en perfectas condiciones y no 
     le han sido retiradas las etiquetas con las que fue despachado. Además, tenga presente que el tiempo de devolución
     oscila entre 3 y 5 días hábiles.
 </h5>
-<h5> Jacket Store no realiza devoluciones de dinero en efectivo, por lo que, en caso de ser aprobada su solicitud, se le generará un cupón
-    correspondiente al valor reclamado para que realice una compra en la tienda. 
+ <p> Jacket Store no realiza devoluciones de dinero en efectivo, por lo que, en caso de ser aprobada su solicitud, se le generará un cupón
+    correspondiente al valor reclamado para que realice una compra en la tienda. </p>
 </h5>
+</div>
+
 
 <h6> Jacket Store</h6>
 
