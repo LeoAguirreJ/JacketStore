@@ -126,6 +126,7 @@ padding: 1% 0 0 1%;
     color: beige;
     size: 200%;
 }
+
 .boxdesign{  
     width: 50%;
     height: 50%;
@@ -194,4 +195,9 @@ padding: 1% 0 0 1%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #F2832D;
     text-align: center;
+}
+.color1{
+    background-color: #edecd7;
+    color: black;
+
 }
