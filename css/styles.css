@@ -80,44 +80,7 @@ header {
     align-items: center;
     flex-wrap: nowrap;
 }
-.devoluciones_formulario {
-    padding-top: 30%;
-    width: 35%;
-    background-color:#FEB762;
-    padding: 20px;
-    margin: auto;
-    border-radius: 7%;
-    box-shadow: inset;
 
-
-}
-.devoluciones_label{
-    width: 30%;
-    text-align: left;
-    display: inline-block;
-}
-.devoluciones_input{
-    width: 60%;
-    display: inline-block;
-
-}
-.devoluciones_boton{
-    width: 20%;
-    height: 30px;
-    border-radius: 15%;
-    background-color: rgb(red, green, blue);
-    margin-left: 40%;
-
-}
-.devoluciones_h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
-    text-align: center;
-    background-color: aliceblue;
-}
-.devoluciones_textarea{
-    width: 100%;
-}
 .devoluciones_h5 {
     display: inline-flex;
     width: 35%;
@@ -223,3 +186,8 @@ header {
 /*.btnform{
     
 }*/
+.fs-1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F2832D;
+    text-align: center;
+}
