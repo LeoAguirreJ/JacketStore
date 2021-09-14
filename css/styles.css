@@ -7,6 +7,12 @@ html {
 body {
     margin: 0;
     margin-bottom: 40px;
+    background-color: #e78b00;
+}
+.body {
+    margin: 0;
+    margin-bottom: 40px;
+    background-color: #e78b00;
 }
 
 footer {
@@ -22,6 +28,8 @@ h1 {
     color: darkorange;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 300%;
+    text-align: center;
+    padding-top: 15px;
     background-color: black;
 }
 
@@ -52,7 +60,7 @@ a{
     justify-content: center;
 }
 .nav li a{
-
+    color: #edecd7;
     text-decoration: none;
 }
 
@@ -64,7 +72,7 @@ a{
     margin: 2%;
 }
 
-.flex-container>div {
+.flex-container{
     width: 35%;
     margin: 10px;
     text-align: justify;
@@ -80,61 +88,13 @@ header {
     align-items: center;
     flex-wrap: nowrap;
 }
-.devoluciones_formulario {
-    padding-top: 30%;
-    width: 35%;
-    background-color:#FEB762;
-    padding: 20px;
-    margin: auto;
-    border-radius: 7%;
-    box-shadow: inset;
-
-
-}
-.devoluciones_label{
-    width: 30%;
-    text-align: left;
-    display: inline-block;
-}
-.devoluciones_input{
-    width: 60%;
-    display: inline-block;
-
-}
-.devoluciones_boton{
-    width: 20%;
-    height: 30px;
-    border-radius: 15%;
-    background-color: rgb(red, green, blue);
-    margin-left: 40%;
-
-}
-.devoluciones_h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
-    text-align: center;
-    background-color: aliceblue;
-}
-.devoluciones_textarea{
-    width: 100%;
-}
-.devoluciones_h5 {
-    display: inline-flex;
-    width: 35%;
-    text-align: justify;
-    margin: 6%;
-    border-radius: 5%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-color: gray;
-    border-block:inherit;
-
-}
-
 
 
 .customicon{
     font-size: 20px;
     text-align:center;
+    padding: 10px; 
+    color: white;
 }
 .myButtonOrange{
     background-color: #e78b00;
@@ -151,63 +111,70 @@ header {
 }
 .phoadres{
     display: flex;
+/*display: flex;*/
+
+/*margin: 1% 1% 1% 1%;*/
+margin: 10px 10px 10px 10px;
+padding: 1% 0 0 1%;
 }
 .adress{
     color: #edecd7;
-    width: 100%;
+    width: 400px;
     height: 40px;
     background-color: gray;
     text-align: center;
 }
 .phone{
     color: #edecd7;
-    width: 70%;
+    width: 200px;
     height: 40px;
     background-color: black;
-    text-align: right;
+    text-align: center;
 }
-.cont{
+.form-register{
     background-color: black;
     color: beige;
     size: 200%;
 }
-/*.boxdesign{
+
+.boxdesign{  
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    /* display: flex; */
+    margin: 10px 10px 10px 10px;
+    padding: 1% 0 0 1%;
     
-    display:;
-     margin: 10px 10px 10px 10px;  */
-  /* padding: 1% 0 0 1%; */
-   
-    /* margin: 10px 10px 10px 10px; 
-    
-}*/
+}
 .box1about {
     width: 30%;
   height: 30%;
-    border-style: solid;
-    border-color: grey;
+    /* border-style: solid; */
+    /* border-color: grey; */
     color: beige;
     background-color:black;
-    margin: 10%, 6%, 6%, 30%;
+
 }
 
 .box2about {
     width: 30%;
   height: 30%;
-    border-style: solid;
-    border-color:beige;
+    /* border-style: solid;
+    border-color:beige; */
     color: beige;
     background-color: gray;
-    margin: 10%, 6%, 6%, 30%;
+    align-self: left;
+
 }
 
 .box3about {
     width: 30%;
   height: 30%;
-    border-style: solid;
-    border-color: grey;
+    /* border-style: solid;
+    border-color: grey; */
     color: beige;
     background-color: black;
-    margin: 10%, 6%, 6%, 30%;
+
 }
 .habout{
     color: gold;
@@ -220,6 +187,27 @@ header {
     margin: o auto;
     background-color: beige;
 }
-/*.btnform{
+.fs-1{
+    color: darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 300%;
+    background-color: black; 
+}
+.btn{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+
     
-}*/
+
+.fs-2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F2832D;
+    text-align: center;
+}
+.color1{
+    background-color: #edecd7;
+    color: black;
+
+}
