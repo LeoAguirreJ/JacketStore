@@ -1,21 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Catalogo de Mujer</title>
+    <link rel="shortcut icon" href="imagenes/favicon.ico"   >
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        h1{
+            position: relative;
+            left: 30px;
+        }
+        ul{
+            position: relative;
+            left: 100px;
+        }
+        aside {
+            float: left;
+            width: 19%;
+        }
+        section {
+            width: 79%;
+            background: #ccc;
+            float: left;
+            overflow: auto;
+            padding-bottom: 60px;
+            padding-top: 30px;
+            align-content: center;
+        }
+        h4 {
+            color: #edecd7;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .card{
+            display: inline-block;
+            height: 450px; 
+            justify-content: center;
+            overflow: hidden;
+            transition: all 700ms ease;
+            margin: 20px 0px 0px 20px;
+            padding: 0px 0px 0px 0px;
+            box-shadow: 1px 9px 10px dimgrey;
+        }
+        .card-img-top{
+            width: 290px;
+            height: 290px;            
+        }
+        .card:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .border-up{
+            background-color: #ff8c00;
+            height: 10px;
+        }
+        .border-aside{
+            display: inline;
+            padding: 200px 0px 0px 40px;
+            /* background-color: forestgreen; */
+            
+        }
+        
+    </style>
 </head>
 <header>
     <h1>Jacket Store</h1>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="hombres.html">Hombres</a>
-        <a href="mujeres.html">Mujeres</a>
-        <a href="niños.html">Niños</a>
-    </nav>
-</header>
-<body>
     
+        <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="hombres.html">Hombres</a></li>
+            <li><a href="mujeres.html">Mujeres</a></li>
+            <li><a href="niños.html">Niños</a></li>
+        </ul>
+    
+</header>
+
+<body>
+    <div class= "border-up"></div>
+    <div class="border-aside"></div>
+    <div class="card" style="width: 18rem;">
+        <img src="imagenes/woman/black-jacket.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">UrbenMood - Chaqueta Mujer Cuero PU Gruesa Capota Motocicleta 2287 Negro</p>
+                <p>$150.000 COP</p>
+            </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="imagenes/woman/leather.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Silueta ajustada, forro en poliester,  Un complemento que no puede faltar en tu armario!</p>
+                <p>$180.000 COP</p>
+            </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="imagenes/woman/red.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Material sintetico, Manga larga, de cremallera, 100% Poliamida</p>
+                <p>$130.000 COP</p>
+            </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="imagenes/woman/black-without.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Southland Material sintetico, Manga larga, de boton de cremallera, 100% Poliamida</p>
+                <p>$140.000 COP</p>
+            </div>
+    </div>
+
+   
+
+    <footer>
+        <link rel="icon" type="image/png" href="favicon/facebook.png" sizes="64x64">
+        <a href="https://www.facebook.com/">
+            <img src="favicon/facebook3.png" width="32" height="32">
+        </a>
+    </footer>
 </body>
+
 </html>
