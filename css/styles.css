@@ -231,7 +231,7 @@ padding: 1% 0 0 1%;
 .product-divL > div{
     background-color: #e78b00;
 }
-.card {
+.catcard {
     display: inline-block;
     height: 450px;
     justify-content: center;
@@ -245,24 +245,24 @@ padding: 1% 0 0 1%;
     border: 1px;
 }
 
-.card-img-top {
+.catcard-img-top {
     width: 245px;
     height: 245px;
 }
 
-.card:hover {
+.catcard:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 15px 15px white;
     cursor: pointer;
 }
 
-.card-text {
+.catcard-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 10px;
     text-align: justify;
 }
 
-.card-fila {
+.catcard-fila {
     align-items: center;
     justify-content: center;
 }
