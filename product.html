@@ -5,74 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5c12f6cddc.js" crossorigin="anonymous"></script>
 </head>
 <header>
-    <div class="divNav">
-        <h1>
-            Jacket Store
-        </h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 col-xl-4">
+                <h1>
+                    Jacket Store
+                </h1>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <ul class="nav">
+                    <li class="nav-item col-3">
+                        <a class="nav-link active" aria-current="page" href="index2.html">Inicio</a>
+                    </li>
+                    <li class="nav-item col-3">
+                        <a class="nav-link" href="mens.html">Hombres</a>
+                    </li>
+                    <li class="nav-item col-3">
+                        <a class="nav-link" href="women.html">Mujeres</a>
+                    </li>
+                    <li class="nav-item col-3">
+                        <a class="nav-link" href="kids.html">Niños</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+
+            </div>
+        </div>
+    </div>
     </div>
     <div>
-        <ul class="nav">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="hombres.html">Hombres</a></li>
-            <li><a href="mujeres.html">Mujeres</a></li>
-            <li><a href="niños.html">Niños</a></li>
-        </ul>
+
     </div>
 </header>
 
-<body>
-    <main>
+<body class="body">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 product-divR">
+                <div class="card col-12 col-md-10 product-divR">
+                    <img class="card-img-top" src="imagenes/hombres.jpg">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
 
-        <div class="flex-container">
-            
-            <div>
-                <img src="imagenes/Jacket1.jpg" width="600" height="450">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
                 </div>
-        
-        
-        <div>
-            <h2>Nombre del producto</h2>
-            <p>Id del producto: 000</p>
-            <p>$30.000</p>
-            <p>Cantidad</p>
-            <input type="number" id="cantidad" name="cantidad">
-            <br><br>
-            <button id="btnAdd">Agregar al carrito</button>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            
+            </div>
+            <div class="col-12 col-md-6 product-divL">
+                <div class="card col-12 col-md-10 product-divL">
+                    <h2 class="card-title">Nombre del producto</h5>
+                    <p>Id del producto: 000</p>
+                    <p>$30.000</p>
+                    <p>Cantidad</p>
+                    <input type="number" id="cantidad" name="cantidad">
+                    <br><br>
+                    <button class="btn btn-dark" id="btnAdd">Agregar al carrito</button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
-        <div>
-            <center>
-                <a href="https://www.facebook.com/">
-                    <i class="customicon fab fa-facebook" style="padding: 10px;"></i>
-                </a>
-                <a href="https://www.instagram.com/">
-                    <i class="customicon fab fa-instagram" style="padding: 10px;"></i>
-                </a>
-                <a href="https://www.twitter.com/">
-                    <i class="customicon fab fa-twitter" style="padding: 10px;"></i>
-                </a>
-        </div>
-        </center>
-    </footer>
-</main>
 </body>
+<footer>
+    <div>
+        <center>
+            <a href="https://www.facebook.com/">
+                <i class="customicon fab fa-facebook" style="padding: 10px; color: white;"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+                <i class="customicon fab fa-instagram" style="padding: 10px; color: white;"></i>
+            </a>
+            <a href="https://www.twitter.com/">
+                <i class="customicon fab fa-twitter" style="padding: 10px; color: white;"></i>
+            </a>
+        </center>
+    </div>
+</footer>
 
 </html>
