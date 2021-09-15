@@ -7,50 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        /*   header {
-
-            display: block;
-            background: orange;
-            padding: 10px 0px;
-        }*/
-
-        aside {
-            float: left;
-            width: 19%;
-        }
-
-        section {
-            width: 79%;
-            background: #ccc;
-            float: left;
-            overflow: auto;
-            padding-bottom: 60px;
-            padding-top: 30px;
-            align-content: center;
-        }
-
-        /*   footer {
-            position: relative;
-            margin-top: -50px;
-            height: 40px;
-            padding: 5px 0px;
-            clear: both;
-            background: lemonchiffon;
-            text-align: center;
-            color: #fff;
-        }*/
-
-        h4 {
-            color: #edecd7;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        figure {
-            display: table;
-            margin: 0 auto;
-        }
-    </style>
 </head>
 <header>
     <h1>Jacket Store</h1>
@@ -63,21 +19,44 @@
             <li><a href="niños.html">Niños</a></li>
         </ul>
     </center>
+    <style>
+        .cataside {
+            float: left;
+            width: 19%;
+        }
+
+        .catsection {
+            width: 79%;
+            background: #ccc;
+            float: left;
+            overflow: auto;
+            padding-bottom: 60px;
+            padding-top: 30px;
+            align-content: center;
+        }
+
+        .cath4 {
+            color: #edecd7;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .catfigure {
+            display: table;
+            margin: 0 auto;
+        }
+    </style>
 </header>
 
 <body>
-    <aside>
+    <aside class="cataside">
         <h2>Categorias</h2>
-        <h4><a href="javascript:funcion()">Todos</a></h4>
-        <h4><a href="javascript:funcion()">Los mas bendidos</a></h4>
-        <h4><a href="javascript:funcion()">Promociones</a></h4>
-        <h4><a href="javascript:funcion()">Hombres</a></h4>
-        <h4><a href="javascript:funcion()">Mujeres</a></h4>
-        <h4><a href="javascript:funcion()">Niños</a></h4>
+        <h4 class="cath4"><a href="javascript:funcion()">Para Hombres</a></h4>
+        <h4 class="cath4"><a href="javascript:funcion()">Para Mujeres</a></h4>
+        <h4 class="cath4"><a href="javascript:funcion()">Para Niños</a></h4>
     </aside>
 
-    <section>
-        <figure>
+    <section class="catsection">
+        <figure class="catfigure">
             <p></p>
             <table>
                 <tr>

@@ -1,21 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Catalogo de Niños</title>
+    <link rel="shortcut icon" href="imagenes/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+
+    </style>
 </head>
 <header>
-    <h1>Jacket Store</h1>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="hombres.html">Hombres</a>
-        <a href="mujeres.html">Mujeres</a>
-        <a href="niños.html">Niños</a>
-    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 col-xl-4">
+                <h1>
+                    Jacket Store
+                </h1>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <ul class="nav">
+                    <li class="nav-item col-3">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item col-3">
+                        <a class="nav-link" href="mens.html">Hombres</a>
+                    </li>
+                    <li class="nav-item col-3">
+                        <a class="nav-link active" href="women.html">Mujeres</a>
+                    </li>
+                    <li class="nav-item col-3">
+                        <a class="nav-link" href="kids.html">Niños</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </header>
+
 <body>
-    
+    <div class="container">
+
+        <div class="row card-fila">
+            <div class="col-md-3 card">
+                <img src="imagenes/woman/black-jacket.jpg" class="card-img-top" alt="...">
+                <p class="card-text">UrbenMood - Chaqueta Mujer Cuero PU Gruesa Capota Motocicleta 2287 Negro </p>
+                <p class="card-text">$150.000 COP</p>
+            </div>
+            <div class="col-md-3 card">
+                <img src="imagenes/woman/leather.jpg" class="card-img-top" alt="...">
+                <p class="card-text">Silueta ajustada, forro en poliester, Un complemento que no puede faltar en tu
+                    armario!</p>
+                <p class="card-text">$180.000 COP</p>
+            </div>
+            <div class="col-md-3 card">
+                <img src="imagenes/woman/red.jpg" class="card-img-top" alt="...">
+                <p class="card-text">Material sintetico, Manga larga, de cremallera, 100% Poliamida</p>
+                <p class="card-text">$130.000 COP</p>
+            </div>
+            <div class="col-md-3 card">
+                <img src="imagenes/woman/black-without.jpg" class="card-img-top" alt="...">
+                <p class="card-text">Southland Material sintetico, Manga larga, de boton de cremallera, 100%
+                    Poliamida </p>
+                <p class="card-text">$140.000 COP</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <link rel="icon" type="image/png" href="favicon/facebook.png" sizes="64x64">
+        <a href="https://www.facebook.com/">
+            <img src="favicon/facebook3.png" width="32" height="32">
+        </a>
+    </footer>
 </body>
+
 </html>
