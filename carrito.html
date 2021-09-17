@@ -5,29 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jacket Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Carrito de Compras</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/8fa6e3b6b0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
         <header>
-            <h1>
-                Jacket Store
-            </h1>
-            <center>
-                <ul class="nav">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="hombres.html">Hombres</a></li>
-                    <li><a href="mujeres.html">Mujeres</a></li>
-                    <li><a href="niños.html">Niños</a></li>
-                </ul>
-            </center>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-xl-4">
+                        <h1>
+                            Jacket Store
+                        </h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <ul class="nav">
+                            <li class="nav-item col-3">
+                                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item col-3">
+                                <a class="nav-link active" href="men.html">Hombres</a>
+                            </li>
+                            <li class="nav-item col-3">
+                                <a class="nav-link" href="women.html">Mujeres</a>
+                            </li>
+                            <li class="nav-item col-3">
+                                <a class="nav-link" href="kids.html">Niños</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
-
-        <h2><img src="imagenes/carrito.png" width="50" height="50" />Carrito de Compras</h2>
+        <br></br>
+        <div class="container">
+        <h2><i class="fas fa-cart-arrow-down"></i> Carrito de Compras</h2>
         <br></br>
         <form id="car-form">
+            
             <table id="carrito">
                 <tr>
                     <th>#</th>
@@ -45,7 +64,7 @@
                         <figcaption>Descripción item</figcaption>
                     </td>
                     <td>200.000 COP</td>
-                    <td><button onClick="alert('¡Retirado!')">Retirar</button></td>
+                    <td><button type="button" class="btn btn-dark btn-sm" onClick="alert('¡Retirado!')">Retirar</button></td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -55,7 +74,7 @@
                         <figcaption>Descripción item</figcaption>
                     </td>
                     <td>220.000 COP</td>
-                    <td><button onClick="alert('¡Retirado!')">Retirar</button></td>
+                    <td><button type="button" class="btn btn-dark btn-sm" onClick="alert('¡Retirado!')">Retirar</button></td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -65,9 +84,10 @@
                         <figcaption>Descripción item</figcaption>
                     </td>
                     <td>120.000 COP</td>
-                    <td><button onClick="alert('¡Retirado!')">Retirar</button></td>
+                    <td><button type="button" class="btn btn-dark btn-sm" onClick="alert('¡Retirado!')">Retirar</button></td>
                 </tr>
             </table>
+        
             <br></br>
             <table id="car-total">
                 <tr>
@@ -75,25 +95,37 @@
                     <th>540.000 COP</th>
                 </tr>
             </table>
+        </div>
             <br></br>
+            <div class="d-grid gap-2 col-2 mx-auto">
             <center>
-                <input type="radio" id="tarjeta" name="formapago" value="tarjeta">
+                <input type="radio" id="tarjeta" name="formapago" value="tarjeta" checked>
                 <label for="tarjeta">Con Tarjeta de Debito</label><br>
                 <input type="radio" id="tarjeta" name="formapago" value="tarjeta">
                 <label for="tarjeta">Con Tarjeta de Credito</label><br>
                 <input type="radio" id="pse" name="formapago" value="pse">
                 <label for="pse">Con PSE</label><br>
                 <br></br>
-                <button id="car-pagar" onClick="alert('A pagar!')">P a g a r</button>
+                <button type="button" class="btn btn-dark" id="car-pagar" onClick="alert('A pagar!')">P a g a r</button>
                 <br></br>
             </center>
+        </div>
         </form>
     </main>
     <footer>
-        <link rel="icon" type="image/png" href="favicon/facebook.png" sizes="64x64">
-        <a href="https://www.facebook.com/">
-            <img src="favicon/facebook3.png" width="32" height="32">
-        </a>
+        <div>
+            <center>
+                <a href="https://www.facebook.com/">
+                    <i class="customicon fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <i class="customicon fab fa-instagram"></i>
+                </a>
+                <a href="https://www.twitter.com/">
+                    <i class="customicon fab fa-twitter"></i>
+                </a>
+            </center>
+        </div>
     </footer>
 </body>
 
