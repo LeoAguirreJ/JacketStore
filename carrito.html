@@ -6,81 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacket Store</title>
-
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        form {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 18px;
-        }
-
-        #carrito {
-            border-collapse: collapse;
-            width: 100%;
-            border-radius: 10%;
-            ;
-        }
-
-        #carrito td,
-        #carrito th {
-            text-align: center;
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-
-        #carrito th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: black;
-            color: white;
-        }
-
-        #carrito button {
-            background-color: black;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 10%;
-
-        }
-
-        #total {
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 40%;
-            margin: auto;
-            border-radius: 10%;
-            border: 1px solid white;
-        }
-
-        #total th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: black;
-            color: white;
-            border: 1px solid white;
-
-        }
-
-        p {
-            height: 10px;
-        }
-
-        #pagar {
-            background-color: black;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            display: inline-block;
-            font-size: 22px;
-            width: 80%;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -100,8 +26,8 @@
         </header>
 
         <h2><img src="imagenes/carrito.png" width="50" height="50" />Carrito de Compras</h2>
-        <p></p>
-        <form>
+        <br></br>
+        <form id="car-form">
             <table id="carrito">
                 <tr>
                     <th>#</th>
@@ -110,7 +36,6 @@
                     <th>Descripción</th>
                     <th>Valor</th>
                     <th>Retirar</th>
-
                 </tr>
                 <tr>
                     <td>1</td>
@@ -143,14 +68,14 @@
                     <td><button onClick="alert('¡Retirado!')">Retirar</button></td>
                 </tr>
             </table>
-            <p></p>
-            <table id="total">
+            <br></br>
+            <table id="car-total">
                 <tr>
                     <th>Total</th>
                     <th>540.000 COP</th>
                 </tr>
             </table>
-            <p></p>
+            <br></br>
             <center>
                 <input type="radio" id="tarjeta" name="formapago" value="tarjeta">
                 <label for="tarjeta">Con Tarjeta de Debito</label><br>
@@ -158,9 +83,9 @@
                 <label for="tarjeta">Con Tarjeta de Credito</label><br>
                 <input type="radio" id="pse" name="formapago" value="pse">
                 <label for="pse">Con PSE</label><br>
-                <p></p>
-                <button id="pagar" onClick="alert('A pagar!')">P a g a r</button>
-                <p></p>
+                <br></br>
+                <button id="car-pagar" onClick="alert('A pagar!')">P a g a r</button>
+                <br></br>
             </center>
         </form>
     </main>

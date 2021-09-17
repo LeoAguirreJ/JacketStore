@@ -266,3 +266,66 @@ padding: 1% 0 0 1%;
     align-items: center;
     justify-content: center;
 }
+#car-form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#carrito {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10%;
+}
+
+#carrito td,
+#carrito th {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#carrito th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#carrito button {
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10%;
+}
+
+#car-total {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+    margin: auto;
+    border-radius: 10%;
+    border: 1px solid white;
+}
+
+#car-total th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+#pagar {
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 22px;
+    width: 80%;
+}
