@@ -4,6 +4,14 @@
     width: 100%;
     background-color: #edecd7;
 }
+.h2-admin {
+    color: darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%;
+    text-align: center;
+    padding-top: 25px;
+    background-color: black;
+}
 .h3-style{
     color: #ff8c00;
     margin: 0px 0px 0px 20px;
