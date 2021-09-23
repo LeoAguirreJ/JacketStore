@@ -16,54 +16,72 @@
             <a href="mujeres.html">Mujeres</a>
             <a href="niños.html">Niños</a>
         </nav>
-    <center>
-        DEVOLUCIONES 
-    </center>
     </header>
 <body>
-    <form class = "devoluciones_formulario">
-        <h1 class= "devoluciones_h1"> FORMULARIO DE DEVOLUCIÓN</h1>
-        <br>
-        <label name="txtNombre" class = "devoluciones_label">Nombre:</label>
-        <input type="text" class= "devoluciones_input" id = "txtNombre"  placeholder = "Nombre del comprador" required> </input>
-        <br>
-        <br>
-        <label class = "devoluciones_label"> Teléfono: </label>
-        <input type="tel" class= "devoluciones_input" name = nTelefono  placeholder = "+5711111111" min = 999999 max = 99999999> </input>
-        <br>
-        <br>
-        <label class = "devoluciones_label"> Correo electrónico: </label>
-        <input type="email" class= "devoluciones_input" placeholder=" ejemplo@mail.com" required ></input>
-        <br>
-        <br>
-        <label class = "devoluciones_label">Fecha de compra: </label>
-        <input type = "date" class= "devoluciones_input" required></input>
-        <br>
-        <br>
-        <label> Motivo de la devolución </label>
-        <br>
-        <br>
-        <textarea class = "devoluciones_textarea" name = "textarea" id ="" cols = "40" rows = 6 placeholder = "Comentarios"required ></textarea>
-        <br>
-        <br>
-
-   <!--<input  type = "submit" value= "Enviar" > </input>-->
-   <center>
-    <button type="button" class="btn btn-secondary">Enviar</button>
-   </center>
-    </form>
-<div>
-<h5 class = "devoluciones_h5">Recuerde que únicamente se pueden efectuar devoluciones si el artículo se encuentra en perfectas condiciones y no 
-    le han sido retiradas las etiquetas con las que fue despachado. Además, tenga presente que el tiempo de devolución
-    oscila entre 3 y 5 días hábiles.
-</h5>
- <p> Jacket Store no realiza devoluciones de dinero en efectivo, por lo que, en caso de ser aprobada su solicitud, se le generará un cupón
-    correspondiente al valor reclamado para que realice una compra en la tienda. </p>
-</h5>
-</div>
-
-
-<h6> Jacket Store</h6>
+<p class="fs-2">DEVOLUCIONES</p>
+<form class = "color1 form-register">
+    <div class = "container">
+        <div class ="row">
+            <div class="col-12 col-md-6"> 
+                <label for="txtNombre" class = "form-label">Nombre:</label>
+                <input type="text" class= "form-control" id = "txtNombre"  placeholder = "Nombre del comprador" required> </input>
+            </div>
+            <div class ="col-12 col-md-6">
+                <label class = "form-label" for= "txtCorreo">Correo electrónico: </label>
+                <input type="email" class= "form-control" id = "txtCorreo" placeholder=" ejemplo@mail.com" required ></input>
+            </div>
+        <div class="row">
+            <div class="col-6 col-md-3"> 
+                <label class = "form-label" for="txtTelefono">Teléfono:</label>
+                <input type="tel" class= "form-control" id="txtTelefono" placeholder = "+5711111111" min = 999999 max = 99999999> </input> 
+            </div>
+            <div class="col6 col-md-3">
+                <label class = "form-label" for ="txtFecha">Fecha de compra:</label>
+                <input type = "date" class= "form-control" id= "txtFecha" required></input>
+            </div>
+            <div class="col-12 col-md-6">
+                <label class="form-label"  for="txtDireccion">Dirección de entrega:</label>
+                <input type="text" class= "form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col12 col-md-6">
+            <label class= "form-label" for="idProducto">Id Producto:</label>
+            <input class = "form-control" type="number" id ="idProducto" min="9999" max=99999999>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col12 col-md-12">
+                <label for="txtMotivo" class = "form-label">Motivo de devolución</label>
+                <textarea class ="form-control" id= "txtMotivo" cols="40" rows=4 required>
+                </textarea>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">Enviar</button>
+            <button class="btn btn-primary" type="button" aria-disabled="true">Limpiar</button>
+          </div>
+    </div>
+</form>
+<br>
+<div class="container px-4">
+    <div class="row gx-5">
+      <div class="col">
+       <div class="p-3 border bg-light">Recuerde que únicamente se pueden efectuar devoluciones si el artículo se encuentra en perfectas condiciones y no 
+        le han sido retiradas las etiquetas con las que fue despachado. Además, tenga presente que el tiempo de devolución
+        oscila entre 3 y 5 días hábiles.</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Jacket Store no realiza devoluciones de dinero en efectivo, por lo que, en caso de ser aprobada su solicitud, se le generará un cupón
+            correspondiente al valor reclamado para que realice una compra en la tienda.</div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
 
 </body>
 </html>

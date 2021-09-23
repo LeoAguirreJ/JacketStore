@@ -1,0 +1,36 @@
+.body-admin{
+    position: absolute;
+    height: 650px;
+    width: 100%;
+    background-color: #edecd7;
+}
+.h3-style{
+    color: #ff8c00;
+    margin: 0px 0px 0px 20px;
+    font-size: 20px;
+}
+.orange-line{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 10px;
+    background-color: #ff8c00;
+}
+.arrow{
+    
+    padding: 0px 0px 0px 20px;
+}  
+.div-range{
+    background: #fff;
+    cursor: pointer;
+    margin: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 0px ;
+    border: 1px solid #ccc;
+    width: 30%;
+    height: 35px;
+}
+.btn-range{
+    width: 20%;
+    height: 35px;
+    margin: 0px 0px 20px 20px;
+}
