@@ -1,0 +1,8 @@
+.floatingTextarea{
+    transform: scale(.85) translateY(-.5rem) translateX(.15rem);
+    opacity: .65;
+    transition: .1s, .1s;
+}
+.prueba{
+    background-color: black;
+}

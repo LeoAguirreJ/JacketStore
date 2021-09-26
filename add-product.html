@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="new">
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formulario de productos</title>
     <!-- Link BOOSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- link´s CSS externos -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles-admin.css">
+    <link rel="stylesheet" href="css/admin/styles.css">
+    <link rel="stylesheet" href="css/admin/textarea.css">
+    <link rel="stylesheet" href="css/admin/text.css">
+    <!-- link´s JS externos -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="js/js-admin.js"></script>
+
 </head>
 <header>
     <div class="container-fluid">
@@ -20,67 +26,107 @@
                 </h1>
             </div>
             <div class="col-12 col-md-4 col-xl-4">
-                <h2 class = h2-admin>
+                <h2 class = h2_admin>
                     Formulario de Productos
                 </h2>
             </div>
         </div>
 </header>
-<p class="fs-2">PRODUCTOS</p>
 <body class="body-admin">
-    <div class="orange-line"></div>
+    <div id= "gy-4">
+        <p class="fs-2-admin">PRODUCTOS</p>
+    </div>
 
     <!-- COPIA DE FORM -->
     <main> 
-    <form class = "color1 form-register">
-        <div class = "container">
-            <div class ="row">
-                <div class="col-12 col-md-6"> 
-                    <label for="txtNombre" class = "form-label">Nombre del producto:</label>
-                    <input type="text" class= "form-control" id = "txtNombre"  placeholder = "Nombre del producto" required> </input>
+        <div id="div_ppal">
+        <form class="row needs-validation" novalidate onsubmit="return false" >
+            <div class= "container">
+                <div class="row offset-md-2">
+                    <div class= "col-md-6 gy-1" >
+                        <label for="txtNombre" class="form-label">Nombre de Producto:</label>
+                        <input type="text" class="form-control" id="txtNombre" required>
+                            <div class="invalid-feedback">
+                                Ingresa un nombre    
+                            </div>
+                    </div>
+                    <div class ="col-md-4 gy-1">
+                        <label class="form-label" for= "txtImagen">Imagen del producto: </label><br>
+                        <input type="file" name="txtImagen" id ="txtImagen" required></input>
+                            <div class="invalid-feedback">
+                            Ingresa una Imagen   
+                            </div>
+                    </div>
                 </div>
-                <div class ="col-12 col-md-6">
-                    <label class="form-label" for= "txtImagen">Imagen del producto: </label><br>
-                    <input type="file" name="txtImagen" id = "txtImagen"></input>
+            </div>
+            <div class= "container" id="categoria">
+            <div class="row offset-md-2" id= "prueba">
+                <div class="col-md-3 gy-3">
+                    <label for="txtCategoria" class="form-label">Categoria</label>
+                    <select class="form-select" id="txtCategoria" required>
+                      <option selected value="">Seleccionar...</option>
+                      <option id= "categoria_mujer">Mujer</option>
+                      <option id= "categoria_hombre">Hombre</option>
+                      <option id= "categoria_niños">Niños</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Porfavor seleccionar una categoria.
+                    </div>
+                  </div>
+                  <div class="col-md-3 gy-3">
+                     <label for="txtTalla" class="form-label">Talla</label>
+                     <select class="form-select" id="txtTalla" required>
+                        <option selected value="">Seleccionar...</option>
+                        <option id= "talla_S">S</option>
+                        <option id= "talla_M">M</option>
+                        <option id= "talla_L">L</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Porfavor seleccionar una talla.
+                        </div>
+                    </div>
+                    <div class="col-md-3 gy-3">
+                    <label class= "form-label" for="idPrecio">Precio de Venta:</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">$</span>
+                        <input type="number" class= "form-control" id="txtPrecio" aria-describedby="inputGroupPrepend" placeholder =" COP =" min = 0 max = 99999999 required> </input>
+                            <div class="invalid-feedback">
+                            Porfavor ingresar un precio.
+                            </div> 
+                    </div> 
+                </div>      
+            </div>
+            </div>
+            <div class= "container gy-5" id="div3" >
+            <div class="row offset-md-2">
+                <div class="col-md-9">
+                        <div class="form-floating">
+                            <textarea class ="form-control" placeholder="comentar aqui" id="floatingTextarea" style="height: 100px" required></textarea>
+                            <label for="floatingTextarea" class = "form-label">Descripción:</label>
+                            <div class="invalid-feedback">
+                                Porfavor describa el producto.
+                              </div>
+                        </div>
+                    </div>
                 </div>
-            
-            <div class="row">
-                <div class="col12 col-md-6">
-                <label class= "form-label" for="idCategoria">Categoria:</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>--Select---</option>
-                    <option value="1">Mujer</option>
-                    <option value="2">Hombre</option>
-                    <option value="3">Niños</option>
-                  </select>
-            </div>
-            
-                <div class="col12 col-md-6">
-                <label class= "form-label" for="idPrecio">Precio de Venta:</label>
-                <input type="number" class= "form-control" id="txtPrecio" placeholder = "$ = COP" min = 0 max = 99999999> </input> 
-            </div>
-            </div>
-            <div class="row">
-                <div class="col12 col-md-12">
-                    <label for="txtDescripcion" class = "form-label">Descripción:</label>
-                    <textarea class ="form-control" id= "txtDescripcion" cols="40" rows=2 required>
-                    </textarea>
-                </div>
+                            <div class="row">
+                            <div class="d-grid gap-2 col-8 mx-auto gy-4">
+                                <button id= "boton_guardar" class="btn btn-dark me-md-2" type= "submit" onclick="guardar_producto()">Guardar</button>
+                            </div>
             </div>
         </div>
-        <br>
-        <div class="row">
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-primary me-md-2" type="button">Guardar</button>
-                <button class="btn btn-primary" type="button" aria-disabled="true">Limpiar</button>
-              </div>
-        </div>
+        
+    </div>
     </form>
 
     <!-- FIN DE FORM -->
 
-    </main>
-        
 
+    <!-- form boostrap -->
+       
+    <!-- fin form boostrap -->
+
+    </main>
+    <script src="js/js-admin.js"></script>
 </body>
 </html>

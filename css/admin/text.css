@@ -1,0 +1,18 @@
+.h2_admin {
+    color: darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%;
+    text-align: center;
+    padding-top: 20px;
+}
+.div3{
+    background-color: black;
+}
+.fs-2-admin{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F2832D;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+
+}

@@ -16,7 +16,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!-- link´s CSS externos -->
     <link rel="stylesheet" href="css/styles.css"> 
-    <link rel="stylesheet" href="css/styles-admin.css">
+    <link rel="stylesheet" href="css/admin/styles.css">
+    <link rel="stylesheet" href="css/admin/textarea.css">
+    <link rel="stylesheet" href="css/admin/text.css">
+    <link rel="stylesheet" href="css/admin/sell.css">
 </head>
 <header>
 <div class="container-fluid">
@@ -27,16 +30,17 @@
           </h1>
       </div>
       <div class="col-12 col-md-4 col-xl-4">
-        <h2 class = h2-admin>
-            Informe de ventas
+        <h2 class = h2_admin>
+            Informe de Ventas
         </h2>
     </div>
   </div>
 </header>
 <br>
-<h3 class="h3-style">RANGO DE VENTAS</h3>
+<div class="caja_title">
+  <h3 class="h3_sell" id="h3_sell">RANGO DE VENTAS</h3>
+</div>
 <body class="body-admin">
-  <div class="orange-line"></div>
     <!--Codigo copiado de https://www.daterangepicker.com/#example2  (para el rango de fecha)-->
         <!-- Desde linea 35 hasta 66  -->
         
@@ -45,10 +49,10 @@
             &nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp;&nbsp;
               <span></span> <i class="arrow fa fa-caret-down"></i>
           </div>
-          <!-- <div> -->
-             <button class="btn-range btn btn-primary" type="button">Buscar</button> 
-          <!-- </div> -->
-        </div>
+          <div class="div_btn col-6">
+            <button class="btn-range btn btn-dark" type="button">Buscar</button>
+          </div>
+        
     
             <script type="text/javascript">
             $(function() {
@@ -78,7 +82,8 @@
             });
             </script>
 <!-- TABLA DE BOOSTRAP -->
-<table class="table table-bordered table-hover">
+<div class="div_tabla">
+  <table class="table table-bordered table-hover">
     <thead class="table-dark">
       <tr>
         <th scope="col">ID Cliente</th>
@@ -116,6 +121,7 @@
       </tr>
     </tbody>
   </table>
+  </div>
 
 <!-- FIN DE TABLA -->
 
