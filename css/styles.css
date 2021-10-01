@@ -216,26 +216,6 @@ padding: 1% 0 0 1%;
     color: black;
 
 }
-.product-divR{
-    margin-top: 30px;
-    justify-content: right;
-    align-content: center;
-    background-color: #e78b00;
-    display: flex;
-}
-.product-divR > div{
-    background-color: #e78b00;
-}
-.product-divL{
-    margin-top: 30px;
-    justify-content: left;
-    align-content: center;
-    background-color: #e78b00;
-    display: flex;
-}
-.product-divL > div{
-    background-color: #e78b00;
-}
 .catcard {
     display: inline-block;
     height: 450px;

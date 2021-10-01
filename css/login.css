@@ -1,0 +1,37 @@
+body {
+    color: darkorange;
+    background-image: url("/imagenes/background.jpg");
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    /* Whatever width you want */
+}
+
+a {
+    color: darkorange;
+}
+
+.myButtonOrange {
+    background-color: #e78b00;
+    width: 120px;
+    height: 35px;
+    color: black;
+    border: 0px;
+}
