@@ -15,7 +15,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <!-- link´s CSS externos -->
-    <link rel="stylesheet" href="css/styles.css"> 
+    <!-- <link rel="stylesheet" href="css/styles.css">  -->
     <link rel="stylesheet" href="css/admin/styles.css">
     <link rel="stylesheet" href="css/admin/textarea.css">
     <link rel="stylesheet" href="css/admin/text.css">
@@ -42,15 +42,15 @@
 </div>
 <body class="body-admin">
     <!--Codigo copiado de https://www.daterangepicker.com/#example2  (para el rango de fecha)-->
-        <!-- Desde linea 35 hasta 66  -->
-        
-        <div class="row">
-          <div class="div-range" id="reportrange">
+      
+      <!-- caja de rangos -->
+        <div class="row ps-5 pe-5 ">
+          <div class="col-12 col-md-5 pb-2 div_range shadow rounded" id="reportrange">
             &nbsp;&nbsp;<i class="fa fa-calendar"></i>&nbsp;&nbsp;
               <span></span> <i class="arrow fa fa-caret-down"></i>
           </div>
-          <div class="div_btn col-6">
-            <button class="btn-range btn btn-dark" type="button">Buscar</button>
+          <div class="d-grid gap-2 col-12 col-md-5">
+            <button class="btn-range btn btn-dark btn-sm" type="button">Buscar</button>
           </div>
         
     
@@ -81,43 +81,44 @@
             
             });
             </script>
+        </div>
 <!-- TABLA DE BOOSTRAP -->
-<div class="div_tabla">
-  <table class="table table-bordered table-hover">
+<div class="col-12 p-5 ">
+  <table class="table table-bordered table-hover table_small shadow p-3 mb-5 bg-body rounded">
     <thead class="table-dark">
       <tr>
         <th scope="col">ID Cliente</th>
-        <th scope="col">Tipo</th>
+        <th scope="col">Nombre</th>
         <th scope="col">Producto</th>
-        <th scope="col">Fecha y hora de Pago</th>
+        <th scope="col" id="fecha">Fecha y hora de Pago</th>
         <th scope="col">Comentario</th>
         <th scope="col">Tipo de Pago</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
       <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
       <tr>
-        <th scope="row">3</th>
-        <td>Larry the Bird</td>
-        <td>@twitter</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Otto</td>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

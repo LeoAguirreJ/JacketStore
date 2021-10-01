@@ -1,13 +1,10 @@
 .caja_title{
-    margin-left: 1em;
+    margin-left: 2em;
 }
-.div-range{
-    display: block;
+.div_range{
     background-color: #fff;
-    width: 90%;
-    height: 30px;
-    margin: 0px 0px 10px 20px;
 }
+
 .h3_sell{
     font-size: 25px;
     color: #ff8c00;
@@ -24,21 +21,6 @@
     font-size: 12px;
     text-align-last: center;
 }
-@media only screen and (min-width: 992px) {
-    /* Large: */
-    .div-range{
-        display: block;
-        background-color: #fff;
-        width: 30%;
-        height: 30px;
-        margin: 0px 0px 10px 20px;
-        
-    }
-    .div_btn{
-        display: block;
-        width: 20em;
-        
-        justify-content: center;
-        margin-left: 2em;
-    }
+@media only screen and (min-width: ≥576px) {
+    /* small: */
 }

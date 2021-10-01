@@ -1,22 +1,48 @@
-.new{
-    position: absolute;
-    width: 100%;
-    height: 200px;
-    background-color: #edecd7;
+header {
+    z-index: 32;
+    display: flex;
+    padding: 0px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+    background-color: black;
+    align-items: center;
+    flex-wrap: nowrap;
 }
+
+/* add-product */
 .body-admin{
-    height: 800px;
-    width: 100%;
     background-color: #edecd7;
 }
 
 .categoria{
     margin-bottom: 20px;
 } 
-.div_ppal{
-    background-color: aqua;
+
+footer {
+    background-color: black;
+    color: #edecd7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
 }
 
+h1 {
+    color: darkorange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 300%;
+    text-align: center;
+    padding-top: 15px;
+    background-color: black;
+}
+
+h2 {
+    color: darkorange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+
+}
 
 @media only screen and (min-width: 576px) {
     /* Small: */
@@ -48,12 +74,12 @@
     .new{
         width: 100%;
         height: 150px;
-        background-color: #edecd7;
+        
     } 
     .body-admin{
         height: 250px;
         width: 100%;
-        background-color: #edecd7;
+        
     } 
 }
 @media only screen and (min-width: 1200px) {
@@ -67,12 +93,12 @@
     .new{
         width: 100%;
         height: 550px;
-        background-color: #edecd7;
+        
     } 
     .body-admin{
         height: 550px;
         width: 100%;
-        background-color: #edecd7;
+        
     }
 
 }    
