@@ -4,68 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/registration.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title> Registro </title>
+    <script src="js/registration.js"></script>
 </head>
 <header>
-    <h1><center>Jacket Store</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="hombres.html">Hombres</a>
-            <a href="mujeres.html">Mujeres</a>
-            <a href="niños.html">Niños</a>
-        </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-3 col-xl-4">
+                <h1>
+                    Jacket Store
+                </h1>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+                <ul class="nav">
+                    <li class="nav-item col-2">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item col-3">
+                        <a class="nav-link active" aria-current="page" href="about.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item col-2">
+                        <a class="nav-link" href="men.html">Hombres</a>
+                    </li>
+                    <li class="nav-item col-3">
+                        <a class="nav-link" href="women.html">Mujeres</a>
+                    </li>
+                    <li class="nav-item col-2">
+                        <a class="nav-link" href="kids.html">Niños</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 col-md-3 col-xl-4">
+                <ul class="nav">
+                    <li class="nav-item col-10">
+                        <a class="nav-link active" href="login.html" style="text-align: right;">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item col-2">
+                        <a class="nav-link active" href="carrito.html">
+                            <i class="customicon fas fa-cart-arrow-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+
+    </div>
 </header>
 <body>
-    <form>
+    <form id = "registration_forms" class = "registration_form">
         <div class="container">
             <div class="row">
                 <div class="col-8">
                     <label for="txtNombre" class="form-label">Nombre completo:</label>
-                    <input type="text" class ="form-control" placeholder="Nombres y apellidos" id= "txtNombre" required></input>
+                    <input type="text" class ="form-control" placeholder="Nombres y apellidos" id= "txtNombre" name ="txtNombre" required></input>
+                    <p class ="text-danger" id = "validar_nombre"></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-4">
                     <label for="txtDireccion" class="form-label">Dirección:</label>
-                    <input type="text" id = "txtDireccion" class="form-control" placeholder="Dirección de entrega" required></input>
+                    <input type="text" id = "txtDireccion" name ="txtDireccion" class="form-control" placeholder="Dirección de entrega" required></input>
+                    <p class ="text-danger" id = "validar_direccion"></p>
                 </div>
                 <div class="col-4">
                     <label for="nTelefono" class="form-label">Teléfono:</label>
-                    <input type="tel" id = "nTelefono" class ="form-control" min = 9999999 max = 9999999999></input>
+                    <input type="tel" id = "nTelefono" name ="nTelefono" class ="form-control" min = 9999999 max = 9999999999></input>
+                    <p class ="text-danger" id = "validar_telefono"></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-2">
                     <label for="nEdad" class = "form-label">Edad:</label>
-                    <input class= "form-control" type="number" min = 1 max=99></input>
+                    <input class= "form-control" type="number" name = "edad" min = 1 max=99></input>
+                    <p class ="text-danger" id = "validar_edad"></p>
                 </div>
                 <div class="col-6">
                     <label for="idUsuario" class= "form-label">Número de documento:</label>
-                    <input type="number" class="form-control" id="idUsuario" placeholder="Número de cédula, tarjeta de identidad o pasaporte"></input>
+                    <input type="number" class="form-control" id="idUsuario" name ="idUsuario" placeholder="Número de cédula, tarjeta de identidad o pasaporte"></input>
+                    <p class ="text-danger" id = "validar_idUsuario"></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-8">
                     <label for="txtCorreo" class="form-label">Correo electrónico:</label>
-                    <input type="text" id="txtCorreo" class="form-control" placeholder = "mail@ejemplo.com" required></input>
+                    <input type="text" id="txtCorreo" name ="txtCorreo" class="form-control" placeholder = "mail@ejemplo.com" required></input>
+                    <p class ="text-danger" id = "validar_correo"></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-8">
                     <label for="txtClave" class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control" id = "txtClave" required>
+                    <input type="password" class="form-control" id = "txtClave" name = "txtClave" required>
+                    <p class ="text-danger" id = "validar_clave"></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-8">
                     <label for="txtClave1" class="form-label">Confirmar contraseña:</label>
-                    <input type="password" class="form-control" id = "txtClave1" required>
+                    <input type="password" class="form-control" id = "txtClave1" name ="txtClave1" required>
+                    <p class ="text-danger" id = "validar_clave1"></p>
                 </div>
             </div>
             <br>
         <div class="d-grid gap-2 d-md-flex">
-            <button class="btn btn-primary" type="button">Registrar</button>
+            <button class="btn btn-primary" type="button"  onclick="validar_campos()">Registrar</button>
             <button class="btn btn-primary" type="button">Limpiar</button>
         </div>
     </div>
