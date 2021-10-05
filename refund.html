@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="js/refund.js"></script>
     <title>Devoluciones</title>
 </head>
 <header>
@@ -59,41 +60,10 @@
 </header>
 
 <body>
-<<<<<<< HEAD
-    <p class = "h2-refund"> Devoluciones </p>>
-<form class = "refund_form">
-    <div class = "container">
-        <div class ="row">
-            <!--<div class="col-12 col-md-6"> 
-                <label for="txtNombre" class = "form-label">Nombre:</label>
-                <input type="text" class= "form-control" id = "txtNombre" placeholder = "Nombre del comprador" required> </input>
-            </div>
-            <div class ="col-12 col-md-6">
-                <label class = "form-label" for= "txtCorreo">Correo electrónico: </label>
-                <input type="email" class= "form-control" id = "txtCorreo" placeholder=" ejemplo@mail.com" required ></input>
-            </div>
-        <div class="row">
-            <div class="col-6 col-md-3"> 
-                <label class = "form-label" for="txtTelefono">Teléfono:</label>
-                <input type="tel" class= "form-control" id="txtTelefono" placeholder = "+5711111111" min = 999999 max = 99999999> </input> 
-            </div>
-            <div class="col6 col-md-3">
-                <label class = "form-label" for ="txtFecha">Fecha de compra:</label>
-                <input type = "date" class= "form-control" id= "txtFecha" required></input>
-            </div>
-            <div class="col-12 col-md-6">
-                <label class="form-label"  for="txtDireccion">Dirección de entrega:</label>
-                <input type="text" class= "form-control">
-            </div>
-        </div>-->
-        <div class="row">
-            <div class="col12 col-md-6">
-            <label class= "form-label" for="idProducto">Id Producto:</label>
-            <input class = "form-control" type="number" id ="idProducto" min="9999" max=99999999>
-=======
     <div class="container">
-        <form class="refund_form">
-            <div class="row">
+        <form id ="refund_form" class="refund_form">
+            <p class = "h2-refund"> Devoluciones</p>
+            <!--<div class="row">
                 <div class="col-12 col-md-6">
                     <label for="txtNombre" class="form-label">Nombre:</label>
                     <input type="text" class="form-control" id="txtNombre" placeholder="Nombre del comprador" required>
@@ -118,28 +88,29 @@
                         <label class="form-label" for="txtDireccion">Dirección de entrega:</label>
                         <input type="text" class="form-control">
                     </div>
-                </div>
+                </div>-->
                 <div class="row">
                     <div class="col12 col-md-6">
                         <label class="form-label" for="idProducto">Id Producto:</label>
-                        <input class="form-control" type="number" id="idProducto" min="9999" max=99999999>
+                        <input class="form-control" type="number" id="idProducto" name ="idProducto" min="9999" max=99999999></input>
+                        <p id= "validar_id"></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col12 col-md-12">
                         <label for="txtMotivo" class="form-label">Motivo de devolución</label>
-                        <textarea class="form-control" id="txtMotivo" cols="40" rows=4 required>
-                </textarea>
+                        <textarea class="form-control" id="txtMotivo" cols="40" rows=4 name ="txtMotivo" required>
+                    </textarea>
+                <p id = "validar_motivo"></p>
                     </div>
                 </div>
             </div>
             <br>
             <div class="row">
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                    <button class="btn btn-primary me-md-2" type="button">Enviar</button>
+                <div class="d-grid gap-2 d-md-flex justify-content-evenly">
+                    <button class="btn btn-primary me-md-2" type="button" onclick="validar_campos()">Enviar</button>
                     <button class="btn btn-primary" type="button" aria-disabled="true">Limpiar</button>
                 </div>
->>>>>>> 91585dbbb54804ab2eaece2c9b51bcad99c133ed
             </div>
         </form>
         <br>
