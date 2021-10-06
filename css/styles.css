@@ -240,15 +240,15 @@ header {
 
 .form-register{
     height: 10%;
-    width: 30%;
+    width: 50%;
     margin: 10px 10px 10px 10px;
     padding: 1% 0 0 1%;
     background-color: gray;
 }
 
 .container{
-    width: 60%;
-    height: 60%;
+    width: 40%;
+    height: 40%;
     display: contents;
     /* background-color: gray; */
     /* display: flex; */
