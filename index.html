@@ -16,28 +16,47 @@
         <div class="row">
             <div class="col-12 col-md-3 col-xl-4">
                 <h1>
-                    Jacket Store
+                    <a class="nav-link active" aria-current="page" href="index.html" style="color: #e78b00;">Jacket Store</a>
                 </h1>
             </div>
-            <div class="col-12 col-md-6 col-xl-4">
+            <div class="col-12 col-md-9 col-xl-8">
+                
+                <!--
                 <ul class="nav">
-                    <li class="nav-item col-2">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
                     <li class="nav-item col-3">
                         <a class="nav-link active" aria-current="page" href="about.html">Nosotros</a>
                     </li>
-                    <li class="nav-item col-2">
+                    <li class="nav-item col-3">
                         <a class="nav-link" href="men.html">Hombres</a>
                     </li>
                     <li class="nav-item col-3">
                         <a class="nav-link" href="women.html">Mujeres</a>
                     </li>
-                    <li class="nav-item col-2">
+                    <li class="nav-item col-3">
                         <a class="nav-link" href="kids.html">Niños</a>
                     </li>
                 </ul>
+                <div class="hide">
+                    <i class="fas fa-bars"></i>Menu
+                </div>
+            -->
+                <nav>
+                    <ul>
+                      <li><a class="col-6 col-md-4 col-xl-2" aria-current="page" href="about.html">Nosotros</a></li>
+                      <li><a class="col-6 col-md-4 col-xl-2" href="men.html">Hombres</a></li>
+                      <li><a class="col-6 col-md-4 col-xl-2" href="women.html">Mujeres</a></li>
+                      <li><a class="col-6 col-md-4 col-xl-2" href="kids.html">Niños</a></li>
+                      <li><a class="col-6 col-md-4 col-xl-2" href="login.html">Iniciar Sesión</a></li>
+                      <li><a class="col-6 col-md-4 col-xl-2" href="carrito.html">
+                        <i class="customicon fas fa-cart-arrow-down"></i>
+                    </a></li>
+                    </ul>
+                    <div class="hide">
+                      <i class="fa fa-bars" aria-hidden="true"></i> Menu
+                    </div>
+                  </nav>
             </div>
+            <!--
             <div class="col-3 col-md-3 col-xl-4">
                 <ul class="nav">
                     <li class="nav-item col-10">
@@ -50,11 +69,8 @@
                     </li>
                 </ul>
             </div>
+        -->
         </div>
-    </div>
-    </div>
-    <div>
-
     </div>
 </header>
 
@@ -148,5 +164,10 @@
         </center>
     </div>
 </footer>
-
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    $(".hide").on('click', function() {
+      $("nav ul").toggle('slow');
+    })
+  </script>
 </html>
