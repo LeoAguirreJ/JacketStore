@@ -110,163 +110,32 @@ header {
     width: 69%;
 }
 .phoadres{
-    /* width: 150px;
-    height: 150px; */
-    display: flex;
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%;
+    /* width: 100px; */
+    /* height: 100px; */
+    display: contents;
+    /* margin: 5px 5px 5px 5px; */
+    /* padding: 1% 0 0 1%; */
 }
 .adress{
     width: 60%;
   height: 30%;
     color: beige;
     background-color:black;
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%;
+    /* margin: 10px 10px 10px 10px;
+    padding: 1% 0 0 1%; */
+
     
 }
 .phone{
     width: 30%;
-    height: 30%;
+    height: 10%;
       color: beige;
       background-color:black;
-      margin: 10px 10px 10px 10px;
-      padding: 1% 0 0 1%;
-    
-}
-.form-registar{
-    width: 60%;
-    height: 60%;
-    display: flexbox;
-    background-color: gray;
-    /* display: flex; */
-    margin: 1px 1px 1px 1px;
-    padding: 1% 0 0 1%; 
-}
-
-.cont{
-    height: 10%;
-    width: 30%;
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%;
-    background-color:black;  
-}
-
-.about{
-    height: 10%;
-    width: 30%;
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%;
-    background-color:black;
+      /* margin: 10px 10px 10px 10px;
+      padding: 1% 0 0 1%; */
     
 }
 
-.subabout{
-    height: 10%;
-    width: 30%;
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%;
-    background-color:black;
-    
-}
-
-.boxdesign{  
-    width: 90%;
-    height: 90%;
-    /* display: flexbox; */
-    display: flex;
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%;    
-}
-.boxdesign1{
-    width: 90%;
-    height: 90%;
-    display: flexbox;
-    /* display: block; */
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%;  
-}
-
-.box1about {
-    width: 80%;
-  height: 30%;
-    color: beige;
-    background-color:black;
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%;
-
-}
-
-.box2about {
-    width: 60%;
-  height: 30%;
-    color: beige;
-    background-color: gray;
-    align-self: left;
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%;
-
-}
-
-.box3about {
-    width: 60%;
-  height: 30%;
-    color: darkorange;
-    background-color: white;
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%;
-
-}
-
-.box4about{
-    width: 100%;
-    height: 30%;
-      color: beige;
-      background-color:black;
-      margin: 10px 10px 10px 10px;
-      padding: 1% 0 0 1%;
-}
-
-.box5about{
-    width: 100%;
-    height: 30%;
-      color: beige;
-      background-color: gray;
-      align-self: left;
-      margin: 10px 10px 10px 10px;
-      padding: 1% 0 0 1%;
-  
-}
-
-.form-register{
-    height: 10%;
-    width: 50%;
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%;
-    background-color: gray;
-}
-
-.container{
-    width: 40%;
-    height: 40%;
-    display: contents;
-    /* background-color: gray; */
-    /* display: flex; */
-    margin: 10px 10px 10px 10px;
-    padding: 1% 0 0 1%; 
-}
-
-.habout{
-    color: gold;
-    size: 200%;
-
-}
-.form{
-    width: 40%;
-    padding: 20px;
-    margin: o auto;
-    background-color: beige;
-}
 .fs-1{
     color: darkorange;
     font-family: Georgia, 'Times New Roman', Times, serif;
