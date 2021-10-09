@@ -25,3 +25,9 @@ function validar_campos (){
         validar_id.innerHTML = ""; 
     }
 }
+function limpiar_campos (){
+    
+    if(formulario.idProducto.value != ""){
+        formulario.idProducto.setAttribute ("class", "form-control is-valid");
+    }
+}
